@@ -1,0 +1,36 @@
+
+  
+
+    <mat-toolbar color="primary" class="navbar">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <!-- <mat-icon>menu</mat-icon> -->
+      </button>
+      <h1><a routerLink="/" class="ecom">E-COM</a></h1>
+      <span class="example-spacer"></span>
+
+      <div *ngIf="menuType === 'default'" class="search" >
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Search">
+        </mat-form-field>
+        <button mat-button class="searchbtn">Search</button>
+      </div>
+
+      <div class="navElement" [ngSwitch]="menuType">
+        <div *ngSwitchCase="'default'">
+          <a routerLink="">Home</a>
+          <a routerLink="products">Products</a>
+          <a routerLink="seller-auth">Seller</a>
+          <a routerLink="cart">Cart(0)</a>
+        </div>
+
+        <div *ngSwitchCase="'seller'">
+          <a routerLink="seller-add-product"> Add Product </a>
+          <a routerLink="seller-home"> Product List</a>
+          <a (click)="logout()" style="cursor: pointer;">Logout</a>
+          <a routerLink="cart">{{sellerName}}</a>
+        </div>
+
+      </div>
+    </mat-toolbar>
+
+  

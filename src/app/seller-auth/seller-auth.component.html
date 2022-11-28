@@ -1,0 +1,65 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <mat-card *ngIf="!showLogin" class="example-card mycard">
+            <h1 class="text-center">Seller Auth Signup</h1>
+
+            <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+                <div class="container d-flex justify-content-center align-items-center flex-column">
+                    <mat-form-field class="full_width" appearance="outline">
+                        <mat-label>Enter Email</mat-label>
+                        <input matInput placeholder="Email" ngModel name="email">
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        <mat-hint>Hint</mat-hint>
+                      </mat-form-field>
+        
+                      <mat-form-field class="full_width" appearance="outline">
+                        <mat-label>Enter Name</mat-label>
+                        <input matInput placeholder="Name" ngModel name="name">
+                        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                      </mat-form-field>
+        
+                      <mat-form-field class="full_width" appearance="outline">
+                        <mat-label>Enter Password</mat-label>
+                        <input type="password" matInput placeholder="Password" ngModel name="password">
+                        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                      </mat-form-field>
+                </div>
+                <button mat-raised-button color="primary" class="primarybtn">SignUp</button> <br> <br>
+                <a (click)="openLogin()" class="clicktologin">Already Have An Account? <span style="color:blue;"> Click To Login</span></a>
+            </form>
+        </mat-card>
+
+
+        <!-- Login Component -->
+
+        <mat-card *ngIf="showLogin" class="example-card mycard">
+          <h1 class="text-center">Seller Login</h1>
+          <p style="color: red; text-align: center;">{{authError}}</p>
+          <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
+              <div class="container d-flex justify-content-center align-items-center flex-column">
+                  <mat-form-field class="full_width" appearance="outline">
+                      <mat-label>Enter Email</mat-label>
+                      <input matInput placeholder="Email" ngModel name="email">
+                      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                      
+                    </mat-form-field>
+      
+                    <mat-form-field class="full_width" appearance="outline">
+                      <mat-label>Enter Password</mat-label>
+                      <input type="password" matInput placeholder="Password" ngModel name="password">
+                      <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                     
+                    </mat-form-field>
+              </div>
+              <button mat-raised-button color="primary" class="primarybtn">Login</button> <br> <br>
+              <a (click)="openSignUp()" class="createAccount"> You Have An Account? <span style="color:blue;">Create Account</span></a>
+          </form>
+      </mat-card>
+
+        </div>
+    </div>
+</div>

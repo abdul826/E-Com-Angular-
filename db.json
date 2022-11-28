@@ -1,0 +1,75 @@
+{
+  "seller": [
+    {
+      "email": "abdul@gmail.com",
+      "name": "Abdul Rahman",
+      "password": "abdul",
+      "id": 1
+    },
+    {
+      "email": "demo@gmail.com",
+      "name": "Demo",
+      "password": "demo",
+      "id": 2
+    },
+    {
+      "email": "ark@gmail.com",
+      "name": "Ark",
+      "password": "ark",
+      "id": 3
+    },
+    {
+      "email": "arif@gmail.com",
+      "name": "Arif Akbar",
+      "password": "arif",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "name": "iPhone 14",
+      "price": "120000",
+      "color": "Black-White",
+      "category": "Mobiles",
+      "description": "One of the best mobile in the market",
+      "image": "https://img6.gadgetsnow.com/gd/images/products/additional/large/G390762_View_1/mobiles/smartphones/apple-iphone-14-128-gb-starlight-4-gb-ram-.jpg",
+      "id": 1
+    },
+    {
+      "name": "HP Laptop",
+      "price": "50000",
+      "color": "Black",
+      "category": "Laptop",
+      "description": "Smooth ",
+      "image": "https://images.unsplash.com/photo-1511385348-a52b4a160dc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1207&q=80",
+      "id": 3
+    },
+    {
+      "name": "STRETCH JEANS",
+      "price": "₹ 2499",
+      "color": "Blue",
+      "category": "Cloths",
+      "description": "- A slim-fit stretch denim with metal branding.  - Features 4 pocket design.  - Zip fly & shank button fastening.  -93% COTTON 5% POLYESTER 2% SPANDEX",
+      "image": "https://cdn.shopify.com/s/files/1/0752/6435/products/HERO_dca18121-c49b-4f3f-9e3e-9c436d6ee8de_765x.jpg?v=1666179307",
+      "id": 4
+    },
+    {
+      "name": "MENS SHOES ",
+      "price": " ₹ 3499",
+      "color": "WALKER - SKY BLUE",
+      "category": "Shoes",
+      "description": "A classic leather shoe with lace closure in round toe shape with confortable insole.",
+      "image": "https://cdn.shopify.com/s/files/1/0752/6435/products/WALKERSKYBLUE_1_ecf073c4-93e1-4378-8ac7-2f27fd2e8875_765x.jpg?v=1668773465",
+      "id": 5
+    },
+    {
+      "name": "Urbane Latest Men Shirts",
+      "price": "₹357",
+      "color": "Blue-Mix",
+      "category": "Shirt",
+      "description": "this formal wear shirt from has been made with 100 % cotton...you can wear this shirt to your office, to any get together or to any others casuals occasions...customer satisfaction is our top most priority",
+      "image": "https://images.meesho.com/images/products/107782489/zmq6b_512.jpg",
+      "id": 6
+    }
+  ]
+}

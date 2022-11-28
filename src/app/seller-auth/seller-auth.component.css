@@ -1,0 +1,16 @@
+.full_width{
+    width: 100%;
+}
+.mycard{
+    margin-top: 15%;
+}
+.primarybtn{
+    margin-left: 25px;
+}
+.createAccount,.clicktologin{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 22px;
+}

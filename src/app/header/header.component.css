@@ -1,0 +1,141 @@
+.ecom{
+    color: white; 
+    text-decoration:none;
+    font-size:30px;
+}
+.navElement{
+    margin-left: 20%;
+}
+
+.navElement>div>a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+ .search{
+    margin-left: 30%;
+    display: flex;
+}
+.searchbtn{
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 5px;
+    border: 1px solid white;
+}
+/*
+input{
+    padding: 0 100px !important;
+} */
+/* .search>input{
+    width: 100%;
+} */
+
+/* Media Query */
+@media only screen and (max-width: 992px) {
+    .navElement{
+        margin-left: 15%;
+    }
+     .search{
+        margin-left: 7%;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    .navbar{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+        height: 20vh;
+        /* overflow: hidden; */
+    }
+    .navElement{
+        margin-left: 15%;
+    }
+     .search{
+        margin-left: 7%;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+        height: 18vh;
+        /* overflow: hidden; */
+    }
+    .navElement{
+        margin-left: 2%;
+    }
+    .navElement>div>a{
+        font-size: 18px;
+    }
+     .search{
+        margin-left: 7%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+        height: 18vh;
+        /* overflow: hidden; */
+    }
+    .navElement{
+        margin-left: 2%;
+    }
+    .navElement>div>a{
+        font-size: 13px;
+    }
+     .search{
+        margin-left: 7%;
+    }
+    
+}
+
+@media only screen and (max-width: 320px) {
+    .navbar{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+        height: 18vh;
+        /* overflow: hidden; */
+    }
+    .navElement{
+        margin-left: -7%;
+    }
+    .navElement>div>a{
+        font-size: 10px;
+    }
+     .search{
+        margin-left: 2%;
+    }
+    .example-full-width{
+        width: 130px;
+    }
+    input{
+        font-size: 13px;
+    }
+    .searchbtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 18%;
+        height: 30px;
+        margin-top: 30px;
+    }
+    .ecom{
+        font-size: 15px;
+    }
+    
+}

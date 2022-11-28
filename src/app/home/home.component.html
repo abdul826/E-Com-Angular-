@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <!-- <div class="container"> -->
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <mat-card class="example-card">
+                <ngb-carousel *ngIf="popularProduct">
+                    <ng-template *ngFor="let item of popularProduct" ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <img class="popularProductimg" src={{item.image}} alt="Random first slide" />
+                        </div>
+                        <div class="carousel-caption">
+                            <h3>Branded Product</h3>
+                            <p>Most sale in the week.</p>
+                        </div>
+                    </ng-template>
+                
+                </ngb-carousel>
+            </mat-card>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->

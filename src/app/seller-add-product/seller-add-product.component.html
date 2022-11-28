@@ -1,0 +1,50 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <mat-card class="example-card mycard mt-5" >
+                <h1 class="text-center">Add Product</h1>
+                <p class="successMessage">{{addProductMessage}}</p>
+                <form #addProduct="ngForm" (ngSubmit)="addProducts(addProduct.value)">
+                    <div class="container d-flex justify-content-center align-items-center flex-column">
+
+                        <mat-form-field class="full_width" appearance="outline">
+                            <mat-label>Enter Name</mat-label>
+                            <input matInput placeholder="Enter Product Name" ngModel name="name">
+                          </mat-form-field>
+
+                          <mat-form-field class="full_width" appearance="outline">
+                            <mat-label>Enter Price</mat-label>
+                            <input matInput placeholder="Enter Price" ngModel name="price">
+                            
+                          </mat-form-field>
+
+                          <mat-form-field class="full_width" appearance="outline">
+                            <mat-label>Enter Color</mat-label>
+                            <input matInput placeholder="Enter Color" ngModel name="color"> 
+                          </mat-form-field>
+
+                          <mat-form-field class="full_width" appearance="outline">
+                            <mat-label>Enter Category</mat-label>
+                            <input matInput placeholder="Enter Categoryg" ngModel name="category">
+                          </mat-form-field>
+
+                          <mat-form-field class="full_width" appearance="outline">
+                            <mat-label>Enter Description</mat-label>
+                            <input matInput placeholder="Enter Category" ngModel name="description">
+                            
+                          </mat-form-field>
+
+                          <mat-form-field class="full_width" appearance="outline">
+                            <mat-label>Enter Image</mat-label>
+                            <input matInput placeholder="Upload Image" ngModel name="image"> 
+                          </mat-form-field>
+
+                    </div>
+                    <button mat-raised-button color="primary" class="primarybtn full_width">Add Product</button>
+                    
+                </form>
+            </mat-card>
+        </div>
+    </div>
+</div>

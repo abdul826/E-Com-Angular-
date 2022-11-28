@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Open+Sans:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,500;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body { height: 100%; }
+
+.successMessage{
+    text-align: center;
+    padding: 5px 7px;
+    /* box-shadow: 2px 3px 5px rgba(148, 148, 148, 0.337); */
+    color: green;
+}
+
+
+
+
+
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */

@@ -1,0 +1,50 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <mat-card class="example-card mycard mt-5" >
+                <h1 class="text-center">Update Product</h1>
+                <!-- <p class="successMessage">{{addProductMessage}}</p> -->
+                <form #updateProduct="ngForm" (ngSubmit)="updateProducts(updateProduct.value)">
+                    <div class="container d-flex justify-content-center align-items-center flex-column">
+
+                        <mat-form-field class="full_width" appearance="outline">
+                            <mat-label>Enter Name</mat-label>
+                            <input matInput placeholder="Enter Product Name" ngModel={{productData?.name}} name="name">
+                          </mat-form-field>
+
+                          <mat-form-field class="full_width" appearance="outline">
+                            <mat-label>Enter Price</mat-label>
+                            <input matInput placeholder="Enter Price" ngModel={{productData?.price}} name="price">
+                            
+                          </mat-form-field>
+
+                          <mat-form-field class="full_width" appearance="outline">
+                            <mat-label>Enter Color</mat-label>
+                            <input matInput placeholder="Enter Color" ngModel={{productData?.color}} name="color">                               <!-- yaha pr ? is liye use kare hai ki productData me value b aa sakti hai aur blank b ho sakta hai to ? use kiye ki vakue ho tabhi show ho -->
+                          </mat-form-field>
+
+                          <mat-form-field class="full_width" appearance="outline">
+                            <mat-label>Enter Category</mat-label>
+                            <input matInput placeholder="Enter Categoryg" ngModel={{productData?.category}} name="category">
+                          </mat-form-field>
+
+                          <mat-form-field class="full_width" appearance="outline">
+                            <mat-label>Enter Description</mat-label>
+                            <input matInput placeholder="Enter Category" ngModel={{productData?.description}} name="description">
+                            
+                          </mat-form-field>
+
+                          <mat-form-field class="full_width" appearance="outline">
+                            <mat-label>Enter Image</mat-label>
+                            <input matInput placeholder="Upload Image" ngModel={{productData?.image}} name="image"> 
+                          </mat-form-field>
+
+                    </div>
+                    <button mat-raised-button color="primary" class="primarybtn full_width">Update Product</button>
+                    
+                </form>
+            </mat-card>
+        </div>
+    </div>
+</div>

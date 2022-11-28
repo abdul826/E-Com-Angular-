@@ -1,0 +1,23 @@
+.tablecontainer{
+    /* box-shadow: 2px 3px 5px rgba(133, 133, 133, 0.23); */
+    margin-top: 50px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.action{
+    display: flex;
+}
+.updateIcon{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
