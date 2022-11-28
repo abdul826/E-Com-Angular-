@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { product } from '../data-type';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-header',
@@ -10,8 +12,9 @@ export class HeaderComponent implements OnInit {
 
   menuType:string = 'default';
   sellerName:string = '';
+  searchResult : undefined|product[];
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, private product:ProductService) { }
 
   ngOnInit(): void {
     this.router.events.subscribe((val:any)=>{
@@ -36,6 +39,24 @@ export class HeaderComponent implements OnInit {
   logout(){
     localStorage.removeItem("seller");
     this.router.navigate(['/'])
+  }
+
+  // Search Logic
+  searchProduct(query:KeyboardEvent){
+    if(query){
+      const element = query.target as HTMLInputElement;
+
+      this.product.searchProduct(element.value).subscribe((result)=>{
+        if(result.length>5){
+          result.length=5; // if u want to show only 5 result in search the use it
+        }
+        this.searchResult = result
+      })
+    }
+  }
+
+  hidden(){
+    this.searchResult=undefined;
   }
 
 }

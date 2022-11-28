@@ -33,7 +33,19 @@ export class ProductService {
     return this.http.put<product>(`http://localhost:3000/products/${product.id}`, product); 
   }
 
+  // Popular
   popularProduct(){
     return this.http.get<product[]>(`http://localhost:3000/products?_limit=3`); 
   }
+
+// Trend
+  trendProduct(){
+    return this.http.get<product[]>(`http://localhost:3000/products?_limit=8`); 
+  }
+
+  // Search
+  searchProduct(query:string){
+    return this.http.get<product[]>(`http://localhost:3000/products?q=${query}`); 
+  }
+
 }

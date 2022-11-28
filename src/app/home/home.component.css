@@ -16,3 +16,6 @@
     justify-content: center;
     align-items: center;
 }
+.card-img-top{
+    height: 180px;
+}

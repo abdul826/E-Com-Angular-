@@ -10,10 +10,16 @@
 
       <div *ngIf="menuType === 'default'" class="search" >
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Search">
+          <input matInput placeholder="Search" (keyup)="searchProduct($event)" (blur)="hidden()">
         </mat-form-field>
         <button mat-button class="searchbtn">Search</button>
-      </div>
+        
+              <ul class="suggested-result" *ngIf="searchResult">
+                <li *ngFor="let item of searchResult">
+                  <a href="">{{item.name}}</a>
+                </li>
+              </ul>
+            </div>
 
       <div class="navElement" [ngSwitch]="menuType">
         <div *ngSwitchCase="'default'">

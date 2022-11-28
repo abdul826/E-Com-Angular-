@@ -1,3 +1,4 @@
+<!-- Craousel -->
 <div class="container-fluid">
     <!-- <div class="container"> -->
         <div class="row">
@@ -20,3 +21,24 @@
         </div>
     </div>
 <!-- </div> -->
+
+<!-- Trending Products -->
+<div class="container mt-3">
+    <h1 class="text-center"><b>Trending Products</b></h1>
+    <div class="row">
+        <!-- card -->
+        <div class="col-sm-3 mb-4" *ngFor="let item of trendProducts">
+            <div class="card" style="width: 14rem; height: 25.5rem;">
+                <img src={{item.image}} class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title text-center" style="font-size: 12px;"><b>{{item.name}}</b></h3>
+                  <p class="card-text text-center">{{item.price}}</p>
+                  <p class="card-text text-center">{{item.color}}</p>
+                  <hr>
+                  <a href="#" class="btn btn-outline-primary">View Details</a> &nbsp; &nbsp;
+                  <a href="#" class="btn btn-outline-primary">Cart</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
