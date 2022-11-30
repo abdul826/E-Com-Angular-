@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <mat-card class="example-card mycard">
+                <h1 class="text-center">Sign-Up</h1>
+
+                <form #userSignUp="ngForm" (ngSubmit)="signup(userSignUp.value)" class="d-flex justify-content-center align-items-center flex-column">
+                    <mat-form-field class="full_width" appearance="outline">
+                        <mat-label>User Name</mat-label>
+                        <input type="text" matInput placeholder="Enter Name" name="name" ngModel>
+                      </mat-form-field>
+
+                    <mat-form-field  class="full_width"  appearance="outline">
+                      <mat-label>User Email</mat-label>
+                        <input type="email" matInput placeholder="Enter Email" name="email" ngModel>
+                      </mat-form-field>
+
+                    <mat-form-field class="full_width"  appearance="outline">
+                      <mat-label>User Password</mat-label>
+                        <input type="password" matInput placeholder="Enter Password" name="password" ngModel>
+                      </mat-form-field>
+
+                      <button mat-raised-button color="primary" class="full_width">Submit</button>
+
+                </form>
+            </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

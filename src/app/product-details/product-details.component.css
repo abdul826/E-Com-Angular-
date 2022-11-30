@@ -1,0 +1,13 @@
+.color{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: black;
+}
+.quantityValue{
+    width: 50px;
+}
+.searchImage{
+    width: 70%;
+    height: 60%;
+}

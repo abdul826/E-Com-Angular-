@@ -107,5 +107,19 @@
       "image": "https://rukminim1.flixcart.com/image/416/416/xif0q/nut-dry-fruit/5/f/g/250-healthy-nutmix-mixed-dryfruits-source-of-vitamin-and-original-imaghwzgq7gykcyr.jpeg?q=70",
       "id": 10
     }
+  ],
+  "users": [
+    {
+      "name": "Abdul Rahman",
+      "email": "abdulrehmankhan5000@gmail.com",
+      "password": "abdul",
+      "id": 1
+    },
+    {
+      "name": "Arif Akbar",
+      "email": "arif@gmail.com",
+      "password": "arif",
+      "id": 2
+    }
   ]
 }

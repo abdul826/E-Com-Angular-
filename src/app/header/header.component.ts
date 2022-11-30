@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
 
   menuType:string = 'default';
   sellerName:string = '';
+  userName:string = '';
   searchResult : undefined|product[];
 
   constructor(private router:Router, private product:ProductService) { }
@@ -21,13 +22,17 @@ export class HeaderComponent implements OnInit {
       if(val.url){
         if(localStorage.getItem("seller") && val.url.includes('seller')){
           // console.log(val.url)
-          this.menuType = 'seller';
+          // this.menuType = 'seller';
 
-          if(localStorage.getItem("seller")){
             let sellerStore = localStorage.getItem('seller');
             let sellerData = sellerStore && JSON.parse(sellerStore)[0];
             this.sellerName = sellerData.name;
-          }
+            this.menuType= 'seller';
+          } else if(localStorage.getItem('user')){
+            let userStore = localStorage.getItem('user');
+            let userData = userStore && JSON.parse(userStore)
+            this.userName = userData.name;
+            this.menuType= 'user';
         }else{
           this.menuType = 'default';
         }
@@ -39,6 +44,11 @@ export class HeaderComponent implements OnInit {
   logout(){
     localStorage.removeItem("seller");
     this.router.navigate(['/'])
+  }
+
+  userLogout(){
+    localStorage.removeItem("user");
+    this.router.navigate(['/user-auth'])
   }
 
   // Search Logic
@@ -57,6 +67,11 @@ export class HeaderComponent implements OnInit {
 
   hidden(){
     this.searchResult=undefined;
+  }
+
+  submitSearch(val:string){
+    // console.log(val)
+    this.router.navigate([`search/${val}`]);
   }
 
 }

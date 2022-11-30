@@ -1,0 +1,34 @@
+
+<div class="container-fluid" *ngIf="productData">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 mt-5">
+                
+                    <img src={{productData.image}} alt="" class="mx-5 searchImage">
+               
+            </div>
+            <div class="col-sm-6 mt-5">
+                <h1>Title : {{productData.name}}</h1>
+                <h3>Name: {{productData.price}}</h3>
+                <div>
+                    <p>Color : {{productData.color}}</p>
+                    <div class="color"></div>
+                </div>
+                <h6>Category : {{productData.category}}</h6>
+                <h6>Category : {{productData.description}}</h6>
+
+                
+                <button type="button" class="btn btn-outline-primary">Add To Cart</button>
+                <button type="button" class="btn btn-outline-primary mx-2">Buy Now</button>
+               
+
+                <div class="quentity mt-2">
+                    <button type="button" class="btn btn-outline-primary">-</button>
+                    <input type="text" class="quantityValue mx-2">
+                    <button type="button" class="btn btn-outline-primary mx-1">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

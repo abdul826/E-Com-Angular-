@@ -1,0 +1,19 @@
+
+<div class="container-fluid mt-2" *ngFor="let item of searchResult">
+    
+        <div class="row">
+            <div class="col-md-8 offset-md-2 d-flex justify-content-center">
+                <!-- <div class="container d-flex justify-content-center"> -->
+                    <a routerLink="/details/{{item.id}}"><img class="searchimage" src={{item.image}} alt=""></a>
+                    <div class="container mx-5">
+                        <h2><a routerLink="/details/{{item.id}}"><b>Title:</b> {{item.name}}</a></h2>
+                        <p><b>Price:</b> {{item.price}} </p>
+                        <p><b>Color:</b> {{item.color}} </p>
+                        <p><b>Description</b> {{item.description}} </p>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    
+</div>
+<hr>
